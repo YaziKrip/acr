@@ -1,6 +1,7 @@
-$(".uzm").click(function(){
+$('main').on('click','.uzm',function (){
+    alert("1");
     id = this.id;
-    if($("#NameBook").val() !== "" && $("#AuthorBook").val() !== "" && $("#DateOrder").val() !== "" && $("#BookIzdan").val() !== "" ){
+    if($("#NameBook" + id).val() !== "" && $("#AuthorBook"+ id).val() !== "" && $("#DateOrder"+ id).val() !== "" && $("#BookIzdan"+ id).val() !== "" ){
         $.post("./edit.php", {
             id : id,
             NameBook : $("#NameBook"+id).val() ,
