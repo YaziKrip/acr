@@ -9,7 +9,7 @@ $("#OrderSend").click(function(){
         } ,function(data){
             alert(data);
             if(data != '0'){
-                let link = "main.html";
+                let link = "main1.php";
                 window.location.replace(link);
             }else{
                 alert("заполните все поля!");

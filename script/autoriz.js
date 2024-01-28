@@ -9,7 +9,7 @@ $("#submit").click(function(){
         }, function(data){
             alert(data);
             if(data != '0'){
-                let link = "main.html?name=" + $('#login');
+                let link = "main1.php?name=" + $('#login').val();
                 alert(link);
                 window.location.replace(link);
             }
